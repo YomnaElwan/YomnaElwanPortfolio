@@ -151,6 +151,10 @@ section {
 .badge{
     background-color: var(--primary);
     font-size: 15px;
+    transition: all 0.3s ease;
+}
+.badge:hover{
+    transform: scale(1.1);
 }
 /*Education*/
 .education-timeline {
@@ -202,6 +206,70 @@ section {
     color: var(--primary);
     transform: translateY(-5px);
 }
+#services .card{
+    transition: all 0.3s ease;
+}
+
+#services .card:hover{
+  transform: translateY(-5px);
+}
+/*Projects*/
+#projects .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-radius: 12px;
+}
+
+#projects .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Live Demo Button */
+.live-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.live-demo-btn .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.live-demo-btn:hover .arrow {
+  transform: translateX(5px);
+}
+.github-btn{
+   padding: 10px 20px;
+   color: var(--primary);   
+   border-color: var(--primary);
+}
+.github-btn:hover{
+    color: white;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Demo Info */
+.demo-info {
+  background-color: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #1E293B;
+}
+.demo-info code {
+  background-color: #e0e7ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
 
 
 /*Footer*/
@@ -226,6 +294,7 @@ section {
 .social-icons a:hover {
   color: var(--accent);
 }
+
 
 
 
