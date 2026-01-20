@@ -1,0 +1,232 @@
+:root {
+    --primary: rgb(29, 79, 144);
+    --secondary: rgb(45, 100, 180); 
+    --bg: #F8FAFC;
+    --text: #1E293B;
+    --accent: rgb(150, 180, 220); 
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    padding-top: 70px;
+    font-family: 'Segoe UI', sans-serif;
+}
+/*Navbar*/
+.navbar {
+    background-color: white !important;
+}
+
+.navbar-brand {
+    color: var(--primary) !important;
+}
+
+.nav-link {
+    color: var(--text) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+     transform: scale(1.1);   
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary);
+    background-color: rgba(79, 70, 229, 0.1);
+    padding: 8px 16px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+/*Header*/
+header {
+    height: 850px;
+    background-image: url("Imgs/Portfolioimg.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.65));
+    position: absolute;
+    width: 100%;
+}
+
+.header-content {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    color: #fff;
+    width: 40%;
+}
+
+.header-content img {
+    margin-bottom: 30px;
+    animation: spin 30s infinite linear;
+}
+
+
+.header-content h1 {
+    font-size: 76px;
+    line-height: 83.6px
+}
+
+.header-content p {
+    line-height: 30px;
+    color: #ffffff;
+    width: 78%;
+    margin: 30px 0px;
+    font-size: 20px;
+}
+
+.header-content a {
+    background-color:var(--primary);
+    color: #fff;
+    padding: 20px 50px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.header-content a:hover {
+    background-color: var(--accent) !important;
+    color: var(--primary);
+}
+
+/*About*/ /*Skills*/ /*Education*/
+section {
+    padding-top: 50px; 
+}
+
+.word-with-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.span {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.line  {
+    flex: 1;
+    height: 2px;
+    background-color: var(--secondary);
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text);
+}
+/*Skills*/
+.badge{
+    background-color: var(--primary);
+    font-size: 15px;
+}
+/*Education*/
+.education-timeline {
+  border-left: 2px solid var(--primary);
+  padding-left: 30px;
+}
+
+.edu-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.edu-item::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+.edu-date {
+  font-size: 14px;
+  color: #6c757d;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.edu-item h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+/*Services*/
+#services .card i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+#services .card-title {
+    margin-bottom: 15px;
+}
+
+#services .card-text {
+    font-size: 16px;
+    color: #1E293B;
+}
+#services i {
+    color: var(--primary);
+    transform: translateY(-5px);
+}
+
+
+/*Footer*/
+.footer {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.social-icons a {
+  color: #c7d2fe;
+  font-size: 24px;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+
+
+
